@@ -1,0 +1,23 @@
+.container {
+  overflow-y: scroll;
+  max-height: 100%;
+  min-height: 10vh;
+  max-height: 55vh;
+  .titleContainer {
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(203, 213, 225, 0.35);
+    .title {
+      color: var(--slate-800, #1e293b);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .historyItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+}

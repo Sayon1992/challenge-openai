@@ -1,0 +1,45 @@
+@import "../scss/custom-queries.scss";
+.container {
+  height: 100%;
+  .contentContainer {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 30vw 65vw;
+    background-color: #f8fafc;
+    height: 90%;
+    gap: 20px;
+    max-height: 90%;
+    grid-template-rows: 82vh;
+    &.onlyChat {
+      grid-template-columns: 95vw;
+    }
+    @media #{$max-sm} {
+      display: flex;
+      flex-direction: column;
+      max-height: unset;
+      height: 100%;
+    }
+
+    .systemAndHistory {
+      display: grid;
+      grid-template-rows: 27vh 53vh;
+      gap: 20px;
+      @media #{$max-sm} {
+        display: flex;
+        flex-direction: column;
+        > div:nth-child(2) {
+          height: 40vh;
+        }
+      }
+    }
+    .chatContainer {
+      @media #{$max-sm} {
+        display: none;
+        &.onlyChatOnChat {
+          display: block;
+          height: 80vh;
+        }
+      }
+    }
+  }
+}

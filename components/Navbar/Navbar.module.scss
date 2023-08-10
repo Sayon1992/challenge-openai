@@ -1,0 +1,33 @@
+@import "../../scss/custom-queries.scss";
+.navbarContainer {
+  background-color: #f97316;
+  box-shadow: 0px 0px 6px 0px rgba(46, 58, 90, 0.13);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  @media #{$max-sm} {
+    padding: 10px;
+  }
+  .leftCol {
+    display: flex;
+    gap: 20px;
+    > .back {
+      color: #fff;
+      text-align: center;
+      font-family: General Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .onlyChat {
+      background-color: white;
+      > svg {
+        stroke: orange;
+      }
+    }
+  }
+}

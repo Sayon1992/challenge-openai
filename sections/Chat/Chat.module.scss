@@ -1,0 +1,120 @@
+@import "../../scss/custom-queries.scss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .chatNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .button {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      border-radius: 6px;
+      background: #f97316;
+      padding: 0 20px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      text-align: center;
+      font-family: General Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      @media #{$max-sm} {
+        height: 30px;
+        padding: 0 10px;
+      }
+    }
+  }
+  .chatContainer {
+    height: 100%;
+    background-color: #f8fafc;
+    overflow-y: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .chatItemContainer {
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 0px 6px 0px rgba(46, 58, 90, 0.09);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      text-overflow: clip;
+
+      .titleAndDateContainer {
+        display: flex;
+        padding: 20px 25px;
+        align-items: center;
+        .title {
+          font-family: General Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.32px;
+
+          &.user {
+            color: #10b981;
+          }
+          &.assistant {
+            color: #f97316;
+          }
+        }
+        .date {
+          color: #94a3b8;
+          font-family: General Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.26px;
+          margin-left: 10px;
+        }
+      }
+      .divider {
+        height: 1px;
+        width: 90%;
+        display: flex;
+        background-color: rgba(203, 213, 225, 0.35);
+        align-self: center;
+      }
+      .content {
+        padding: 20px 25px;
+        color: #1e293b;
+        font-family: General Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px; /* 156.25% */
+        letter-spacing: 0.48px;
+        pre {
+          background-color: #f4f4f4;
+          border: 1px solid #ddd;
+          padding: 10px;
+          overflow-x: auto;
+          font-family: monospace;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .inputContainer {
+    padding: 25px;
+    .charactersLeft {
+      font-family: General Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.42px;
+    }
+  }
+}

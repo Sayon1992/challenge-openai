@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background: white;
+  transition: 0.3s all;
+  justify-content: space-between;
+
+  &.deleting {
+    background: rgba(255, 237, 213, 0.5);
+    transition: 0.3s all;
+  }
+  .leftCol {
+    display: flex;
+    .searchContainer {
+      border-radius: 50%;
+      background-color: #fdba74;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+    }
+    .titleContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1px;
+      margin-left: 10px;
+      .title {
+        color: #1e293b;
+        font-family: General Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .time {
+        display: flex;
+        align-items: center;
+        color: #94a3b8;
+        font-family: General Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.26px;
+      }
+    }
+  }
+}
