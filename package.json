@@ -16,7 +16,6 @@
     "encoding": "^0.1.13",
     "eslint": "^8.0.1",
     "eslint-config-next": "13.4.13",
-    "firebase": "^10.1.0",
     "next": "13.4.13",
     "openai": "^3.3.0",
     "react": "18.2.0",
@@ -26,7 +25,6 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/react-syntax-highlighter": "^15.5.7",
     "@types/uuid": "^9.0.2",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "eslint-config-standard-with-typescript": "^37.0.0",

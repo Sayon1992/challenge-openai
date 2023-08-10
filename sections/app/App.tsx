@@ -13,12 +13,8 @@ import { IChats } from "../Chat/ChatItem";
 
 let systemInput = "";
 
-interface IApp {
-  searchHistory: IHistoryItem[];
-}
-
-const App = ({ searchHistory = [] }: IApp) => {
-  const [searchHistoryState, setSearchHistoryState] = useState(searchHistory);
+const App = () => {
+  const [searchHistoryState, setSearchHistoryState] = useState<IHistoryItem[]>([]);
   const [selectedSearchHistory, setSelectedSearchHistory] = useState<number | null>(null);
   const [loadingSend, setLoadingSend] = useState(false);
   const [onlyChat, setOnlyChat] = useState(false);
