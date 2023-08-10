@@ -50,7 +50,10 @@ const Chat = ({ chats = [], send, createNewChat, enable = false, loading = false
             value={input}
             placeholder="Insertar Prompt"
             onChange={(e) => setInput(e.target.value)}
-            handleSend={() => send(input)}
+            handleSend={() => {
+              send(input);
+              setInput("");
+            }}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 send(input);
